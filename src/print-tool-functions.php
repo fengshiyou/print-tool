@@ -24,7 +24,7 @@ if (!function_exists('dv_arr')) {
 if (!function_exists('dv')) {
     function dv($value, $tag = 'dv')
     {
-        if (APP_DEBUG) {
+        if (getenv('APP_DEBUG')) {
             if (is_array($value)) {
                 echo $tag ? $tag . ':<br>' : '';
                 dv_arr($value);
@@ -40,9 +40,9 @@ if (!function_exists('dv')) {
     }
 }
 if (!function_exists('dd')) {
-    function dd($value, $tag = 'dv')
+    function dd($value)
     {
-        dv($value, $tag);
+        dv($value);
         die();
     }
 }
