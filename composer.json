@@ -1,0 +1,37 @@
+{
+  "name": "fsy-laravel/print-tool",
+  "description": "方便打印调试的工具",
+  "type":"util",
+  "keywords": ["print"],
+  "license": "MIT",
+  "homepage": "https://github.com/fengshiyou/print-tool",
+  "authors": [
+    {
+      "name": "fengshiyou",
+      "email": "501453944@qq.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.5.9"
+
+  },
+  "replace": {
+  },
+  "autoload": {
+    "classmap": [
+    ],
+    "files": [
+      "src/print-tool-functions.php"
+    ],
+    "psr-4": {
+    }
+  },
+  "suggest": {
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  }
+}
